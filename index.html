@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify 2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="music-container">
+        <header class="playlist-title">
+            <h4>Playlist</h4>
+        </header>
+
+        <figure class="cover-figure">
+            <img id="cover" class="cover" alt="Capa do álbum.">
+        </figure>
+
+        <audio id="audio"></audio>
+
+        <section class="below-cover">
+            <div class="song-info">
+                <h2 id="song-name" class="song-name">Nome da música</h2>
+                <p id="band-name" class="band-name light-color">Nome da banda</p>
+            </div>
+            <button id="like" class="button light-color" aria-label="Curtir música">
+                <i class="bi bi-heart"></i>
+            </button>
+        </section>
+
+        <section id="progress-container" class="progress-container">
+            <div class="progress-bar">
+                <div id="current-progress" class="current-progress"></div>
+            </div>
+            <div class="time-box">
+                <time id="song-time" class="song-time">00:00:00</time>
+                <time id="total-time" class="total-time">00:00:00</time>
+            </div>
+        </section>
+
+        <nav class="button-container">
+            <button id="shuffle" class="button" aria-label="Embaralhar playlist">
+                <i class="bi bi-shuffle"></i>
+            </button>
+            <button id="previous" class="button button-navigate" aria-label="Música anterior">
+                <i class="bi bi-skip-start-fill"></i>
+            </button>
+            <button id="play" class="button button-biggest" aria-label="Reproduzir ou pausar">
+                <i class="bi bi-play-circle-fill"></i>
+            </button>
+            <button id="next" class="button button-navigate" aria-label="Próxima música">
+                <i class="bi bi-skip-end-fill"></i>
+            </button>
+            <button id="repeat" class="button" aria-label="Repetir música">
+                <i class="bi bi-repeat"></i>
+            </button>
+        </nav>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
